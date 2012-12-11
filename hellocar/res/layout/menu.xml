@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3b3b3b">
+    
+    <TextView android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:text="WELCOME"
+        	  android:textSize="40dip"
+        	  android:gravity="center"
+        	  android:layout_marginTop="20dip"/>
+     
+      <TextView
+        	android:id="@+id/IDinform"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+      >
+      </TextView>
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" 게시판  "
+        android:textSize="20dip"
+        android:textColor="#000000"
+        android:textStyle="bold" 
+        android:id="@+id/btnBoard"
+        android:layout_marginTop="80dip"
+    />
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" 내 정보 "
+        android:textSize="20dip"
+        android:textColor="#000000"
+        android:textStyle="bold" 
+        android:id="@+id/btnMyInform"
+    />
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" 회원정보수정  "
+        android:textSize="20dip"
+        android:textColor="#000000"
+        android:textStyle="bold" 
+        android:id="@+id/btnMyModify"
+    />
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" 로그아웃 "
+        android:textSize="20dip"
+        android:textColor="#000000"
+        android:textStyle="bold" 
+        android:id="@+id/btnLogout"
+    />
+</LinearLayout>

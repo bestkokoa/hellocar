@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+  <!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="회원가입 "
+            android:textSize="40dip"
+            android:textStyle="bold" />
+        <!--  ID Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+  <!--  ID TextField -->
+        <EditText
+            android:id="@+id/registerId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+              
+  <!--  Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Password" />
+  <!--  Password TextField -->
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+        
+    <!--  Univ Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Univ" />
+  <!--  Univ TextField -->
+        <EditText
+            android:id="@+id/registerUniv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <!--  Major Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Major" />
+  <!--  Major TextField -->
+        <EditText
+            android:id="@+id/registerMajor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+  <!--  Name TextField -->
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    <!--  Cellphone Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cellphone" />
+  <!--  Cellphone TextField -->
+        <EditText
+            android:id="@+id/registerCellphone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        
+        
+        <!--  Error message -->
+        <TextView android:id="@+id/register_error"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#e30000"
+              android:padding="10dip"
+              android:textStyle="bold"/>     
+        
+        
+        <!--  등록 버튼 -->        
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text=" 회원가입 " />
+
+        <!--  로그인 화면으로 -->
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="로그인 화면으로 넘어갑니다. 클릭해주세요"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
+        
+        

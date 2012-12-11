@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <!-- View Title Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="글쓰기 "
+            android:textSize="40dip"
+            android:textStyle="bold" />
+	     <!-- 제목 -->
+         
+
+         <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dip"
+             android:text="제  목" />
+
+         <EditText
+             android:id="@+id/wrtTitle"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" />
+  
+        <!-- 출발시간 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="출발시간" />
+
+            <EditText
+                android:id="@+id/wrtStartime"
+                android:layout_width="140dp"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <!-- 출발지 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="출발지" />
+
+            <EditText
+                android:id="@+id/wrtStartLoc"
+                android:layout_width="140dp"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <!-- 경유지 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="경유지" />
+
+            <EditText
+                android:id="@+id/wrtRouteLoc"
+                android:layout_width="140dp"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <!-- 목적지 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="목적지" />
+
+            <EditText
+                android:id="@+id/wrtGoalLoc"
+                android:layout_width="140dp"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <!-- 바쁜정도 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="바쁜정도" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="140dp"
+                android:layout_height="fill_parent"
+                android:entries="@array/hurry" />
+        </LinearLayout>
+
+        <!-- 제한사항 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="-제한사항(가능하면  v표시)" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="짐" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="흡연" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_weight="1"
+                android:text="애완동물" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:text="- 신뢰도제한" />
+
+            <EditText
+                android:id="@+id/wrtRely"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dip"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:text="- 성별제한" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="여자" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dip"
+                    android:checked="true"
+                    android:text="ALL" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:text="- 휴대전화번호 노출여부" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="예" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dip"
+                    android:text="아니오" />
+            </RadioGroup>
+        </LinearLayout>
+        <!-- Error message -->
+
+
+        <!-- 상세내용 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="- 상세내용" />
+
+        <EditText
+            android:id="@+id/wrtText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- 출발시간 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnReg"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="등 록" />
+
+            <Button
+                android:id="@+id/btnLinkToBoard"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="취 소" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

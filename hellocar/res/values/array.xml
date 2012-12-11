@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hurry">
+        <item>보통</item>
+        <item>바쁨</item>
+        <item>한가</item>
+    </string-array>
+    
+</resources>
