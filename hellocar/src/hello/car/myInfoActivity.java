@@ -102,13 +102,6 @@ public class myInfoActivity extends Activity implements OnItemClickListener {
 	 		//dialog.dismiss();
 	 		//myMemberAdapter.notifyDataSetChanged();
 	 	}
-	    /*
-        list = (ListView )findViewById(R.id.listView1);
-        data = new ArrayList<String>();
-        adapter = new ArrayAdapter<String>(this,
-        		android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
-        */
 	    //게시판에 들어갈 내용 list에 담기
 	    //arMemberList = new ArrayList<Member>();
 	    //arMemberList.add(new Member("asdf", "asdf", 1, "asdf", "12:34", "23:45"));

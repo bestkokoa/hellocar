@@ -29,11 +29,7 @@ public class BoardActivity extends Activity implements OnItemClickListener {
 	
 	ArrayList<Member> arMemberList;
 	Button write;
-	/*
-	ListView list;
-	ArrayList<String> data;
-	ArrayAdapter<String> adapter;
-	*/
+	
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -74,9 +70,7 @@ public class BoardActivity extends Activity implements OnItemClickListener {
 	    	ArrayList<String> regtimeList =getXmlDataList("searchresult.xml", "regTime")  ;
 	    	
 	
-	    	//ArrayList<string> namelist = getXmlDataList("searchresult.xml", "name");//name 태그값을 읽어 namelist 리스트에 저장                                    
-	    	//ArrayList<string> pricelist = getXmlDataList("searchresult.xml", "price"); 	//price 태그값을 읽어 prica 리스트에 저장
-	    	if(noList.isEmpty())
+	     	if(noList.isEmpty())
 	    		arMemberList.add(new Member("","", 0,"아무것도 검색되지 않았습니다.","",""));
 	    	else
 	    	{
@@ -97,18 +91,7 @@ public class BoardActivity extends Activity implements OnItemClickListener {
 	    {                                    
 	    	Log.e("Error", e.getMessage());
 	 	} 
-	 	finally
-	 	{
-	 		//dialog.dismiss();
-	 		//myMemberAdapter.notifyDataSetChanged();
-	 	}
-	    /*
-        list = (ListView )findViewById(R.id.listView1);
-        data = new ArrayList<String>();
-        adapter = new ArrayAdapter<String>(this,
-        		android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
-        */
+
 	    //게시판에 들어갈 내용 list에 담기
 	    //arMemberList = new ArrayList<Member>();
 	    //arMemberList.add(new Member("asdf", "asdf", 1, "asdf", "12:34", "23:45"));

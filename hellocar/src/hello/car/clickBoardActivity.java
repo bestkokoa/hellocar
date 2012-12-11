@@ -130,8 +130,6 @@ public class clickBoardActivity extends Activity {
 				// // Close Registration View
 				// finish();
 
-				// edtID.setText("");
-				// edtPW.setText("");
 			} else
 				// result 태그값이 1이 아닐때 실패
 				Toast.makeText(clickBoardActivity.this, "정보로딩 실패",
